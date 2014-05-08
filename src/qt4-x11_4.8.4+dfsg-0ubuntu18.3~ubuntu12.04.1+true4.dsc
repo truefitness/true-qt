@@ -2,7 +2,7 @@ Format: 3.0 (quilt)
 Source: qt4-x11
 Binary: libqtcore4, libqt4-core, libqtgui4, libqt4-gui, libqt4-network, libqt4-opengl, libqt4-script, libqt4-scripttools, libqt4-sql, libqt4-sql-mysql, libqt4-sql-odbc, libqt4-sql-psql, libqt4-sql-sqlite, libqt4-sql-tds, libqt4-svg, libqt4-webkit, libqt4-xml, libqt4-xmlpatterns, libqt4-dbus, libqt4-qt3support, libqt4-designer, libqt4-help, libqt4-assistant, libqt4-test, libqt4-declarative, libqt4-declarative-folderlistmodel, libqt4-declarative-gestures, libqt4-declarative-particles, libqt4-declarative-shaders, libqt4-dev, libqt4-dev-bin, libqt4-private-dev, libqt4-opengl-dev, libqt4-dbg, libqt4-designer-dbg, libqt4-qt3support-dbg, libqt4-script-dbg, libqt4-webkit-dbg, libqt4-xmlpatterns-dbg, qt4-bin-dbg, qt4-demos-dbg, qt4-designer, qt4-dev-tools, qt4-qmake, qt4-qtconfig, qt4-demos, qt4-qmlviewer, qt4-linguist-tools, qdbus, qt4-doc, qt4-doc-html, qt4-default
 Architecture: any all
-Version: 4:4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true3
+Version: 4:4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4
 Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
 Uploaders: Fathi Boudra <fabo@debian.org>, Modestas Vainius <modax@debian.org>, Sune Vuorela <debian@pusling.com>, Pino Toscano <pino@debian.org>, Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>, Timo Jyrinki <timo@debian.org>
 Homepage: http://qt-project.org/
@@ -65,11 +65,11 @@ Package-List:
  qt4-qtconfig deb x11 optional
 Checksums-Sha1: 
  58e8f285501cb84ed33e512573a99357b889fbda 199762900 qt4-x11_4.8.4+dfsg.orig.tar.xz
- a27e6247ae976d39ac25f0552aa4e31bfb076000 512794 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true3.debian.tar.gz
+ 57939d1c0674792f53ab09f365b69790ae200a89 513941 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4.debian.tar.gz
 Checksums-Sha256: 
  47a735635c11205911501a7436e6140235911012282a16b738b3cc1442e1b4f6 199762900 qt4-x11_4.8.4+dfsg.orig.tar.xz
- f883ad2f5fd394285c10d028fec31369b7a33bc4ff3780466f265f193f564a78 512794 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true3.debian.tar.gz
+ 73fc6dde77fb48b069ab4039edba69470878c4b17c9a7d0f662fed3ab83c0eeb 513941 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4.debian.tar.gz
 Files: 
  d74665f5ae3e0b9e4cc407375f872008 199762900 qt4-x11_4.8.4+dfsg.orig.tar.xz
- 6143e927a5ecca2cf810cb960454f33c 512794 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true3.debian.tar.gz
+ ac8a89aa5762ef533c7088f8a2cd4343 513941 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4.debian.tar.gz
 Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>

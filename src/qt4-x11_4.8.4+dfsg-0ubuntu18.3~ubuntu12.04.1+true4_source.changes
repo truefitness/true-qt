@@ -1,0 +1,80 @@
+Format: 1.8
+Date: Thu, 08 May 2014 15:55:59 -0500
+Source: qt4-x11
+Binary: libqtcore4 libqt4-core libqtgui4 libqt4-gui libqt4-network libqt4-opengl libqt4-script libqt4-scripttools libqt4-sql libqt4-sql-mysql libqt4-sql-odbc libqt4-sql-psql libqt4-sql-sqlite libqt4-sql-tds libqt4-svg libqt4-webkit libqt4-xml libqt4-xmlpatterns libqt4-dbus libqt4-qt3support libqt4-designer libqt4-help libqt4-assistant libqt4-test libqt4-declarative libqt4-declarative-folderlistmodel libqt4-declarative-gestures libqt4-declarative-particles libqt4-declarative-shaders libqt4-dev libqt4-dev-bin libqt4-private-dev libqt4-opengl-dev libqt4-dbg libqt4-designer-dbg libqt4-qt3support-dbg libqt4-script-dbg libqt4-webkit-dbg libqt4-xmlpatterns-dbg qt4-bin-dbg qt4-demos-dbg qt4-designer qt4-dev-tools qt4-qmake qt4-qtconfig qt4-demos qt4-qmlviewer qt4-linguist-tools qdbus qt4-doc qt4-doc-html qt4-default
+Architecture: source
+Version: 4:4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4
+Distribution: precise
+Urgency: low
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Changed-By: Rohan Garg <mpnolan@basenet>
+Description: 
+ libqt4-assistant - transitional package for Qt 4 assistant module
+ libqt4-core - transitional package for Qt 4 core non-GUI runtime libraries
+ libqt4-dbg - Qt 4 library debugging symbols
+ libqt4-dbus - Qt 4 D-Bus module
+ libqt4-declarative - Qt 4 Declarative module
+ libqt4-declarative-folderlistmodel - Qt 4 folderlistmodel QML plugin
+ libqt4-declarative-gestures - Qt 4 gestures QML plugin
+ libqt4-declarative-particles - Qt 4 particles QML plugin
+ libqt4-declarative-shaders - Qt 4 shaders QML plugin
+ libqt4-designer - Qt 4 designer module
+ libqt4-designer-dbg - Qt 4 designer library debugging symbols
+ libqt4-dev - Qt 4 development files
+ libqt4-dev-bin - Qt 4 development programs
+ libqt4-gui - transitional package for Qt 4 GUI runtime libraries
+ libqt4-help - Qt 4 help module
+ libqt4-network - Qt 4 network module
+ libqt4-opengl - Qt 4 OpenGL module
+ libqt4-opengl-dev - Qt 4 OpenGL library development files
+ libqt4-private-dev - Qt 4 private development files
+ libqt4-qt3support - Qt 3 compatibility library for Qt 4
+ libqt4-qt3support-dbg - Qt 3 compatibility library for Qt 4 debugging symbols
+ libqt4-script - Qt 4 script module
+ libqt4-script-dbg - Qt 4 script library debugging symbols
+ libqt4-scripttools - Qt 4 script tools module
+ libqt4-sql - Qt 4 SQL module
+ libqt4-sql-mysql - Qt 4 MySQL database driver
+ libqt4-sql-odbc - Qt 4 ODBC database driver
+ libqt4-sql-psql - Qt 4 PostgreSQL database driver
+ libqt4-sql-sqlite - Qt 4 SQLite 3 database driver
+ libqt4-sql-tds - Qt 4 FreeTDS database driver
+ libqt4-svg - Qt 4 SVG module
+ libqt4-test - Qt 4 test module
+ libqt4-webkit - transitional package for Qt 4 WebKit module
+ libqt4-webkit-dbg - transitional package for Qt 4 WebKit debugging symbols
+ libqt4-xml - Qt 4 XML module
+ libqt4-xmlpatterns - Qt 4 XML patterns module
+ libqt4-xmlpatterns-dbg - Qt 4 XML patterns library debugging symbols
+ libqtcore4 - Qt 4 core module
+ libqtgui4  - Qt 4 GUI module
+ qdbus      - Qt 4 D-Bus tool
+ qt4-bin-dbg - Qt 4 binaries debugging symbols
+ qt4-default - Qt 4 development defaults package
+ qt4-demos  - Qt 4 examples and demos
+ qt4-demos-dbg - Qt 4 examples and demos debugging symbols
+ qt4-designer - graphical designer for Qt 4 applications
+ qt4-dev-tools - Qt 4 development tools
+ qt4-doc    - Qt 4 API documentation
+ qt4-doc-html - Qt 4 API documentation (HTML format)
+ qt4-linguist-tools - Qt 4 Linguist tools
+ qt4-qmake  - Qt 4 qmake Makefile generator tool
+ qt4-qmlviewer - Qt 4 QML viewer
+ qt4-qtconfig - Qt 4 configuration tool
+Changes: 
+ qt4-x11 (4:4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4) precise; urgency=low
+ .
+   * Add patches true-gc-black-screenfix and qtbug-21337
+Checksums-Sha1: 
+ 353efa07b304e611ccfbf9ecd546705fce5423bc 4931 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4.dsc
+ 58e8f285501cb84ed33e512573a99357b889fbda 199762900 qt4-x11_4.8.4+dfsg.orig.tar.xz
+ 57939d1c0674792f53ab09f365b69790ae200a89 513941 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4.debian.tar.gz
+Checksums-Sha256: 
+ b2695657752bee4a98731bdecef02b9b0eeac8281e3aad75e9e38a7bdcb54420 4931 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4.dsc
+ 47a735635c11205911501a7436e6140235911012282a16b738b3cc1442e1b4f6 199762900 qt4-x11_4.8.4+dfsg.orig.tar.xz
+ 73fc6dde77fb48b069ab4039edba69470878c4b17c9a7d0f662fed3ab83c0eeb 513941 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4.debian.tar.gz
+Files: 
+ 4da4cff6500f520399421f52f467434e 4931 libs optional qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4.dsc
+ d74665f5ae3e0b9e4cc407375f872008 199762900 libs optional qt4-x11_4.8.4+dfsg.orig.tar.xz
+ ac8a89aa5762ef533c7088f8a2cd4343 513941 libs optional qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4.debian.tar.gz
+Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>

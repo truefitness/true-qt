@@ -29,5 +29,5 @@ quilt refresh
 #patch -p0 < some.patch
 #quilt refresh
 #dch -v "4:4.8.4+dfsg-0ubuntu18.1~precise1+true3"
-##debuild --no-lintian -S -nc -uc -us -sd
+##debuild --no-lintian -S -uc -us -sd
 #dpkg-buildpackage -us -uc -j4
