@@ -1,0 +1,469 @@
+Format: 1.8
+Date: Thu, 08 May 2014 15:30:18 -0500
+Source: qt4-x11
+Binary: libqtcore4 libqt4-core libqtgui4 libqt4-gui libqt4-network libqt4-opengl libqt4-script libqt4-scripttools libqt4-sql libqt4-sql-mysql libqt4-sql-odbc libqt4-sql-psql libqt4-sql-sqlite libqt4-sql-tds libqt4-svg libqt4-webkit libqt4-xml libqt4-xmlpatterns libqt4-dbus libqt4-qt3support libqt4-designer libqt4-help libqt4-assistant libqt4-test libqt4-declarative libqt4-declarative-folderlistmodel libqt4-declarative-gestures libqt4-declarative-particles libqt4-declarative-shaders libqt4-dev libqt4-dev-bin libqt4-private-dev libqt4-opengl-dev libqt4-dbg libqt4-designer-dbg libqt4-qt3support-dbg libqt4-script-dbg libqt4-webkit-dbg libqt4-xmlpatterns-dbg qt4-bin-dbg qt4-demos-dbg qt4-designer qt4-dev-tools qt4-qmake qt4-qtconfig qt4-demos qt4-qmlviewer qt4-linguist-tools qdbus qt4-doc qt4-doc-html qt4-default
+Architecture: source
+Version: 4:4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true3
+Distribution: precise-backports
+Urgency: medium
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Changed-By: Rohan Garg <mpnolan@basenet>
+Description: 
+ libqt4-assistant - transitional package for Qt 4 assistant module
+ libqt4-core - transitional package for Qt 4 core non-GUI runtime libraries
+ libqt4-dbg - Qt 4 library debugging symbols
+ libqt4-dbus - Qt 4 D-Bus module
+ libqt4-declarative - Qt 4 Declarative module
+ libqt4-declarative-folderlistmodel - Qt 4 folderlistmodel QML plugin
+ libqt4-declarative-gestures - Qt 4 gestures QML plugin
+ libqt4-declarative-particles - Qt 4 particles QML plugin
+ libqt4-declarative-shaders - Qt 4 shaders QML plugin
+ libqt4-designer - Qt 4 designer module
+ libqt4-designer-dbg - Qt 4 designer library debugging symbols
+ libqt4-dev - Qt 4 development files
+ libqt4-dev-bin - Qt 4 development programs
+ libqt4-gui - transitional package for Qt 4 GUI runtime libraries
+ libqt4-help - Qt 4 help module
+ libqt4-network - Qt 4 network module
+ libqt4-opengl - Qt 4 OpenGL module
+ libqt4-opengl-dev - Qt 4 OpenGL library development files
+ libqt4-private-dev - Qt 4 private development files
+ libqt4-qt3support - Qt 3 compatibility library for Qt 4
+ libqt4-qt3support-dbg - Qt 3 compatibility library for Qt 4 debugging symbols
+ libqt4-script - Qt 4 script module
+ libqt4-script-dbg - Qt 4 script library debugging symbols
+ libqt4-scripttools - Qt 4 script tools module
+ libqt4-sql - Qt 4 SQL module
+ libqt4-sql-mysql - Qt 4 MySQL database driver
+ libqt4-sql-odbc - Qt 4 ODBC database driver
+ libqt4-sql-psql - Qt 4 PostgreSQL database driver
+ libqt4-sql-sqlite - Qt 4 SQLite 3 database driver
+ libqt4-sql-tds - Qt 4 FreeTDS database driver
+ libqt4-svg - Qt 4 SVG module
+ libqt4-test - Qt 4 test module
+ libqt4-webkit - transitional package for Qt 4 WebKit module
+ libqt4-webkit-dbg - transitional package for Qt 4 WebKit debugging symbols
+ libqt4-xml - Qt 4 XML module
+ libqt4-xmlpatterns - Qt 4 XML patterns module
+ libqt4-xmlpatterns-dbg - Qt 4 XML patterns library debugging symbols
+ libqtcore4 - Qt 4 core module
+ libqtgui4  - Qt 4 GUI module
+ qdbus      - Qt 4 D-Bus tool
+ qt4-bin-dbg - Qt 4 binaries debugging symbols
+ qt4-default - Qt 4 development defaults package
+ qt4-demos  - Qt 4 examples and demos
+ qt4-demos-dbg - Qt 4 examples and demos debugging symbols
+ qt4-designer - graphical designer for Qt 4 applications
+ qt4-dev-tools - Qt 4 development tools
+ qt4-doc    - Qt 4 API documentation
+ qt4-doc-html - Qt 4 API documentation (HTML format)
+ qt4-linguist-tools - Qt 4 Linguist tools
+ qt4-qmake  - Qt 4 qmake Makefile generator tool
+ qt4-qmlviewer - Qt 4 QML viewer
+ qt4-qtconfig - Qt 4 configuration tool
+Closes: 647265 667911 673537 679874 681476 684556 684678 684688 684867 684985 685132 685524
+Launchpad-Bugs-Fixed: 744812 905147 999522 1024402 1045755 1046244 1057578 1094360 1119656 1131070 1180067 1195007 1259577 1289600
+Changes: 
+ qt4-x11 (4:4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true3) precise-backports; urgency=low
+ .
+   * No-change backport to precise
+ .
+ qt4-x11 (4:4.8.4+dfsg-0ubuntu18.3) saucy; urgency=medium
+ .
+   [ Rohan Garg ]
+   * Add kubuntu_98_a11y_fix_crash.diff to fix plasma crashing due to
+     ubuntu-specific accessibility patch LP: #1289600
+ .
+ qt4-x11 (4:4.8.4+dfsg-0ubuntu18.1) saucy-security; urgency=low
+ .
+   * SECURITY UPDATE: [XML Entity Expansion Denial of Service] (LP: #1259577).
+     - Add CVE-2013-4549.diff
+     - add limit in src/xml/sax/qxml.cpp
+     - http://lists.qt-project.org/pipermail/announce/2013-December/000036.html
+     - CVE-2013-4549
+ .
+ qt4-x11 (4:4.8.4+dfsg-0ubuntu18) saucy; urgency=low
+ .
+   * debian/patches/aarch64_fix_atomic_set.patch:
+     Fix QBasicAtomicInt::testAndSetRelaxed and
+     QBasicAtomicPointer<T>::testAndSetRelaxed to actually set the given value,
+     rather than a pointer to that value on the local stack frame.
+ .
+ qt4-x11 (4:4.8.4+dfsg-0ubuntu17) saucy; urgency=low
+ .
+   * Do not build the translations on AArch64.
+ .
+ qt4-x11 (4:4.8.4+dfsg-0ubuntu16) saucy; urgency=low
+ .
+   * add kubuntu_default_numbers.diff to fix default numbers in slovak
+     and indian locales LP: #1131070
+ .
+ qt4-x11 (4:4.8.4+dfsg-0ubuntu15) saucy; urgency=low
+ .
+   * Build for Aarch64.
+ .
+ qt4-x11 (4:4.8.4+dfsg-0ubuntu14) saucy; urgency=low
+ .
+   * Fix regression caused by LP: #1180067. (LP: #1195007)
+ .
+ qt4-x11 (4:4.8.4+dfsg-0ubuntu13) saucy; urgency=low
+ .
+   * Rebuild to investigate Valgrind errors in qgtkstyle
+ .
+ qt4-x11 (4:4.8.4+dfsg-0ubuntu12) saucy; urgency=low
+ .
+   * Drop kubuntu_38_revert_fix_jit_crash.diff as QTBUG-27322 which it was
+     preventing is fixed in 4.8.4 and now only causes a regression as it's
+     a revert of the fix for QTBUG-23871
+ .
+ qt4-x11 (4:4.8.4+dfsg-0ubuntu11) saucy; urgency=low
+ .
+   * debian/rules: build with -no-pch on armhf and powerpc (fixes FTBFS).
+ .
+ qt4-x11 (4:4.8.4+dfsg-0ubuntu10) saucy; urgency=low
+ .
+   * debian/patches/kubuntu_42_fix_icon_themes.diff:
+     fix icon themes not working on a default Ubuntu install by using
+     GtkSettings where appropriate (LP: #1180067).
+ .
+ qt4-x11 (4:4.8.4+dfsg-0ubuntu9) raring; urgency=low
+ .
+   * Fix moc tripping over BOOST_JOIN. (LP: #1119656)
+ .
+ qt4-x11 (4:4.8.4+dfsg-0ubuntu8) raring; urgency=low
+ .
+   [ Harald Sitter ]
+   * Drop kdeqt.pot creation. Not used anymore (fixes build with new
+     pkg-kde-tools)
+ .
+   [ Dmitry Shachnev ]
+   * debian/patches/kubuntu_41_remove_gtk_theme_check.diff:
+     do not check that Gtk theme is not empty (LP: #1094360).
+ .
+ qt4-x11 (4:4.8.4+dfsg-0ubuntu7) raring; urgency=low
+ .
+   * Fix header file, causing build failure with GCC 4.8.
+ .
+ qt4-x11 (4:4.8.4+dfsg-0ubuntu6) raring; urgency=low
+ .
+   * Cherry pick upstream commit 5b285845a3c3478a4008b7e3416c3912c69fd20b
+     as QTBUG-29082_Fix_call_to_QMetaObject_metaCall_from_updateProperty.patch
+     to fix a crash in QML to fix kde bug 311751.
+ .
+ qt4-x11 (4:4.8.4+dfsg-0ubuntu5) raring; urgency=low
+ .
+   * SECURITY UPDATE: incorrect errors with certificate verification
+     - debian/patches/CVE-2012-6093.patch: use openssl access functions to
+       properly handle layout changes in
+       src/network/ssl/qsslsocket_openssl.cpp,
+       src/network/ssl/qsslsocket_openssl_symbols.cpp,
+       src/network/ssl/qsslsocket_openssl_symbols_p.h.
+     - CVE-2012-6093
+   * SECURITY UPDATE: shared memory segments incorrect permissions
+     - debian/patches/CVE-2013-0254.patch: set appropriate permissions in
+       src/corelib/kernel/qsharedmemory_unix.cpp,
+       src/corelib/kernel/qsystemsemaphore_unix.cpp,
+       src/gui/image/qnativeimage.cpp,
+       src/gui/image/qpixmap_x11.cpp,
+       src/plugins/platforms/xcb/qxcbwindowsurface.cpp,
+       src/plugins/platforms/xlib/qxlibwindowsurface.cpp,
+       tools/qvfb/qvfbshmem.cpp.
+     - CVE-2013-0254
+ .
+ qt4-x11 (4:4.8.4+dfsg-0ubuntu4) raring; urgency=low
+ .
+   * debian/control:
+     - change the build-dep order the way around to get previous packages
+       depending on libqt4-dev still building. libqt4-dev dep on
+       qt4-default | qt-default to ensure at least one version of qmake & co
+       is targetted. qt{4,5}-default will provide qt-default.
+ .
+ qt4-x11 (4:4.8.4+dfsg-0ubuntu3) raring; urgency=low
+ .
+   [ Harald Sitter]
+   * Rename fix_medium_font.diff to kubuntu_39_fix_medium_font.diff to reflect
+     its origin.
+   * Apply kubuntu patches in numeric order.
+   * Add more dep3 tags to kubuntu patches.
+ .
+   [ Timo Jyrinki ]
+   * Migrate to use qtchooser for Qt5 co-installation support
+     - Libraries co-installed, executables managed by qtchooser
+     - Packages will need build-dep on qt4-default to build against Qt4
+     - Symlinks left for binaries that had -qt4 via alternatives
+   * Clean alternatives on upgrade
+   * Add qt4-default package
+ .
+ qt4-x11 (4:4.8.4+dfsg-0ubuntu2) raring; urgency=low
+ .
+   * Add kubuntu_40_disable_neon.patch disable neon for Ubuntu since armel
+     is no longer supported.
+ .
+ qt4-x11 (4:4.8.4+dfsg-0ubuntu1) raring; urgency=low
+ .
+   * New upstream release
+   * Remove QTBUG-14724_close_orphaned_file_descriptors_after_printing.patch
+     now upstream
+   * Remove disable-SSL-compression-by-default.patch now upstream
+ .
+ qt4-x11 (4:4.8.3+dfsg-0ubuntu3) quantal-proposed; urgency=low
+ .
+   [ Iain Lane ]
+   * On armel and armhf, build with -gstabs instead of -g in an effort to get
+     the link step for QtWebkit to complete before timed out by the builders.
+ .
+   [ Felix Geyer ]
+   * Disabling SSL/TLS compression to mitigate the "CRIME" attack. (LP: #1057578)
+     - Add disable-SSL-compression-by-default.patch
+ .
+ qt4-x11 (4:4.8.3+dfsg-0ubuntu2) quantal-proposed; urgency=low
+ .
+   [ Felix Geyer ]
+   * Drop versioned build-dependcy on g++-4.6 [armel]. g++ 4.7 is used
+     on all architectures in Ubuntu.
+ .
+   [ Ken VanDine ]
+   * debian/patches/fix_medium_font.diff
+     - Patch from Michał Sawicz to fix Ubuntu Medium font in Qt (LP: #744812)
+ .
+ qt4-x11 (4:4.8.3+dfsg-0ubuntu1) quantal; urgency=low
+ .
+   * New upstream bugfix release.
+   * Drop patches that have been merged upstream:
+     - QElfParser-fix-type-of-sh_size.patch
+     - Fix-cursor-truncate-to-include-line-position.patch
+     - qt_atomic_sparc64.patch
+     - fix_use_after_free_qlocale_unix.patch
+     - kubuntu_01_fix_build_glib_231.diff
+     - kubuntu_33_shaped_drag.diff
+   * Refresh patches:
+     - 01_debian_append_qt4_suffix.diff
+     - 16_hide_std_symbols_on_qtwebkit.diff
+     - no_libicu_message.diff
+     - kubuntu_93_disable_overlay_scrollbars.diff
+   * Update symbols files.
+   * Add kubuntu_38_revert_fix_jit_crash.diff as the patch removed in
+     4:4.8.2-0ubuntu7 has been merged upstream.
+ .
+ qt4-x11 (4:4.8.2+dfsg-2ubuntu1) quantal; urgency=low
+ .
+   * Merge from Debian unstable, remaining changes:
+     - Do not package ibase/firebird and sqlite2 package
+       + remove from debian/control
+       + libqt4-sql doesn't recommend libqt4-sql-ibase and libqt4-sql-sqlite2
+     - libqt4-dbus recommends instead of depends on qdbus
+     - build with -no-phonon
+     - Do not build libqt4-phonon, disable in debian/control
+     - Add MessagesQt.sh
+     - Rules to create Messages.sh link to MessagesQt.sh and rules to create po
+       dir and execute extract-messages.sh in override_dh_auto_install
+     - Add and install Trolltech.conf in libqtcore4.install
+     - Build QtWebkit and use it only for QtAssistant
+       + Rule to put qt_webkit_version.pri in mkspecs/modules
+       + Rule to remove libQtWebKit* after build
+       + Exclude usr/bin/assistant-qt4 from dh_shlibdeps
+   * Fixes crash in Qt Assistant during startup. (LP: #1045755)
+   * Update symbols files.
+ .
+ qt4-x11 (4:4.8.2+dfsg-2) unstable; urgency=low
+ .
+   * Remove Fix-JIT-crash-on-x86-64-avoid-32-bit-branch-offset-o.patch. It seems
+     that causes crashes in an hardware-dependant fashion (Closes: #685524).
+ .
+ qt4-x11 (4:4.8.2+dfsg-1) unstable; urgency=low
+ .
+   * Add myself to Uploaders.
+   * Remove non-free zlib's RFCs (Closes: #685132):
+     - Add prune-nonfree to debian/rules to remove them.
+     - Add a note on README.source of what we are removing from the original
+       tarball.
+   * Add upstream patch Fix-cursor-truncate-to-include-line-position.patch
+     needed for Calligra and katepart.
+   * Add upstream patch
+     Fix-JIT-crash-on-x86-64-avoid-32-bit-branch-offset-o.patch to fix JIT crash
+     on x86-64 (avoid 32-bit branch offset overflow) (Closes: #684985).
+   * Compress all packages using xz compression. It helps the D-I team to fit
+     stuff in the first CD.
+   * Close multiarch bugs created by the latest binNMU
+     (Closes: #684556, #684678, #684688, #684867).
+   * Update symbols files.
+ .
+ qt4-x11 (4:4.8.2-2) unstable; urgency=low
+ .
+   * Team upload.
+   * Add QTBUG-25324_assistant_segfault_on_start_with_gcc_4.7.patch made by
+     Than Ngo to solve a segfault during assistant's startup (Closes: #679874).
+   * Add fix_use_after_free_qlocale_unix.patch by Julien Cristau to fix the
+     use of a variable after free in src/corelib/tools/qlocale_unix.cpp
+     (Closes: #681476).
+   * Update symbols files with build logs from other archs.
+ .
+ qt4-x11 (4:4.8.2-1) unstable; urgency=low
+ .
+   * New upstream release.
+ .
+   * Drop patches, merged/stolen from upstream:
+     - QTBUG-24718_Fix_a_crash_in_cursorToX_when_new_block_is_added.patch
+     - fix_qvfb_build.patch
+     - gcc-4.7.diff
+   * Refresh patches.
+   * Confirm symbol files on all Debian arches for 4.8.1 and on amd64 for 4.8.2.
+   * Mark qdesigner_internal symbols as (optional=internal).
+ .
+ qt4-x11 (4:4.8.2-0ubuntu7) quantal; urgency=low
+ .
+   * Remove patch kubuntu_36_qtscript_64bit.diff causes crashes on app startup
+     LP: #1046244
+ .
+ qt4-x11 (4:4.8.2-0ubuntu6) quantal; urgency=low
+ .
+   [ Rohan Garg ]
+   * Transition to libtiff-dev
+ .
+   [ Jonathan Riddell ]
+   * Add kubuntu_37_cups_settings.diff from https://bugs.kde.org/180051 and
+     QTBUG-25372 use CUPS settings in the print dialogue. LP: #905147
+ .
+ qt4-x11 (4:4.8.2-0ubuntu5) quantal; urgency=low
+ .
+   * Add patch kubuntu_36_qtscript_64bit.diff from Qt 4.8.3 branch
+     recommended by KDevelop authors. Fix JIT crash on x86-64
+ .
+ qt4-x11 (4:4.8.2-0ubuntu4) quantal; urgency=low
+ .
+   * Add kubuntu_35_text_cursor_position.diff from upstream fixes LP: #1024402
+     "Text cursor in wrong cell in calligrawords"
+ .
+ qt4-x11 (4:4.8.2-0ubuntu3) quantal; urgency=low
+ .
+   * debian/control:
+     - Build-Depend on libtiff5-dev instead of libtiff4-dev
+ .
+ qt4-x11 (4:4.8.2-0ubuntu2) quantal; urgency=low
+ .
+   * Add kubuntu_34_no_gold_check.diff. On some archs /usr/bin/ld.gold exists
+     in the form of a wrapper despite binutils-gold not being installed.
+     Disable the check to fix FTBFS. (We aren't using gold anyways)
+ .
+ qt4-x11 (4:4.8.2-0ubuntu1) quantal; urgency=low
+ .
+   * Merge from Debian Git snapshot, remaining changes:
+     - Do not package ibase/firebird and sqlite2 package
+       + remove from debian/control
+       + libqt4-sql doesn't recommend libqt4-sql-ibase and libqt4-sql-sqlite2
+     - libqt4-dbus recommends instead of depends on qdbus
+     - build with -no-phonon
+     - Do not build libqt4-phonon, disable in debian/control
+     - Build packages with lzma compression using the dh addon from
+       pkg-kde-tools
+     - Add MessagesQt.sh
+     - Rules to create Messages.sh link to MessagesQt.sh and rules to create po
+       dir and execute extract-messages.sh in override_dh_auto_install
+     - Add and install Trolltech.conf in libqtcore4.install
+     - Build QtWebkit and use it only for QtAssistant
+       + Rule to put qt_webkit_version.pri in mkspecs/modules
+       + Rule to remove libQtWebKit* after build
+       + Exclude usr/bin/assistant-qt4 from dh_shlibdeps
+     - In debian/rules: move documentation building to override_dh_auto_install
+       where dh_listpackages works as expected with dpkg-buildpackage.
+   * Update symbols files.
+   * New upstream release.
+   * Drop patches that have been applied upstream:
+     - QTBUG-24718_Fix_a_crash_in_cursorToX_when_new_block_is_added.patch
+     - fix_qvfb_build.patch
+     - gcc-4.7.diff
+   * Update kubuntu_33_shaped_drag.diff with a commit backported from the
+     upstream 4.8 branch. (LP: #999522)
+ .
+ qt4-x11 (4:4.8.1-2) unstable; urgency=low
+ .
+   * Team upload.
+ .
+   [ Didier Raboud ]
+   * Add libqt4-dev Breaks against libphonon-dev << 4:4.6.0.0-1+exp1~
+     because otherwise phonon might not be there in its multiarch'ed
+     version, hence might not be detected by the usual cmake Qt modules
+     detectors.
+ .
+   [ Pino Toscano ]
+   * Change the Homepage to http://qt-project.org/.
+   * Backport the upstream commit 9e981c4dd03effc2c52b52f529edfa8955e534ce to
+     fix plugin loading on big endian 64 bit architectures, such as s390x and
+     ppc64; patch QElfParser-fix-type-of-sh_size.patch.
+   * 07_trust_dpkg-arch_over_uname-m.diff: fix the hppa case (see bug #672825).
+   * Suggest libicu48 in libqtcore4 for the optional locale functions.
+   * Disable the warnings about not being able to load ICU libraries;
+     patch no_libicu_message.diff. (together with the above it Closes: #673537)
+   * Recommend libqt4-dbg in libqt4-designer-dbg, libqt4-qt3support-dbg,
+     libqt4-script-dbg, libqt4-xmlpatterns-dbg, qt4-bin-dbg, and qt4-demos-dbg.
+   * Override the two lintian warnings for dbg-package-missing-depends, since
+     they are false positives.
+   * Fix a hypen-as-minus issue in moc-qt4 man page.
+   * Change the section of libqt4-webkit-dbg to oldlibs, since it is a
+     transitional package.
+   * Small touches to the descriptions of packages, including specifying some
+     of the tools included in libqt4-dev-bin and qt4-dev-tools.
+ .
+   [ Felix Geyer ]
+   * Update watch file to the new URL on qt-project.org.
+ .
+   [ Modestas Vainius ]
+   * Confirm symbol files on all Debian arches.
+ .
+ qt4-x11 (4:4.8.1-1) unstable; urgency=low
+ .
+   * New upstream release.
+ .
+   [ Fathi Boudra ]
+   * Use multiarch for importsdir:
+     - update debian/libqt4-declarative-*.install files.
+     - mark QML plugin packages as Multi-Arch: same.
+   * Re-add patch s390x_jscore.diff to add s390/s390x support in JavaScriptCore.
+     The patch was partly merged in Qt 4.8.
+   * Add CVE-2011-3922.patch: Stack-buffer-overflow in glyph handling.
+ .
+   [ Felix Geyer ]
+   * Drop fix_ftbfs_format-security.patch, fixed upstream.
+   * Refresh patches for the new upstream version.
+   * Update symbol files.
+   * Add QTBUG-24718_Fix_a_crash_in_cursorToX_when_new_block_is_added.patch,
+     cherry-picked from upstream.
+   * Make it possible to install libqt4-dev from a foreign architecture while
+     having all binaries in the native architecture.
+     - Move binaries from libqt4-dev into the new package libqt4-dev-bin.
+     - Mark libqt4-dev-bin, qt4-qmake and qt4-linguist-tools as
+       Multi-Arch: foreign.
+   * Add a dh_strip call for qt4-bin-dbg instead of moving the debug files
+     manually.
+     - drop mv-qt4-bin-dbg.sh script.
+     - drop elfutils build dependency.
+   * Bump debhelper build-dependency to 9.
+   * Fix hyphen-used-as-minus-sign lintian warnings.
+   * Build the documentation in the dh_auto_build-indep target instead of
+     dh_auto_install.
+   * qt-multiarch-plugin-path-compat.diff: include legacy pre-multiarch qml
+     import path.
+ .
+   [ Didier Raboud ]
+   * Merge the 4:4.7.4-3 unstable release: drop fix-format.diff, merged
+     upstream.
+ .
+   [ Pino Toscano ]
+   * Fix build failures with GCC 4.7; patch gcc-4.7.diff. (Closes: #667911)
+   * Fix atomic support on sparc64, by Aurelien Jarno (thanks!);
+     patch qt_atomic_sparc64.patch. (Closes: #647265)
+   * Remove ${shlibs:Depends} from all the -dbg packages.
+   * Compress qt4-doc-html as XZ.
+Checksums-Sha1: 
+ 5995470bb763fd5f51fb4c28a45aa30aa13f9d83 4931 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true3.dsc
+ 58e8f285501cb84ed33e512573a99357b889fbda 199762900 qt4-x11_4.8.4+dfsg.orig.tar.xz
+ a27e6247ae976d39ac25f0552aa4e31bfb076000 512794 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true3.debian.tar.gz
+Checksums-Sha256: 
+ 6168d3a8ecb82fae36f8e561fa593b9479ea54f0bed3737c902ed4bf2fae73f7 4931 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true3.dsc
+ 47a735635c11205911501a7436e6140235911012282a16b738b3cc1442e1b4f6 199762900 qt4-x11_4.8.4+dfsg.orig.tar.xz
+ f883ad2f5fd394285c10d028fec31369b7a33bc4ff3780466f265f193f564a78 512794 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true3.debian.tar.gz
+Files: 
+ de57c2bc2f4902771b3ac0be80021f2d 4931 libs optional qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true3.dsc
+ d74665f5ae3e0b9e4cc407375f872008 199762900 libs optional qt4-x11_4.8.4+dfsg.orig.tar.xz
+ 6143e927a5ecca2cf810cb960454f33c 512794 libs optional qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true3.debian.tar.gz
+Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>

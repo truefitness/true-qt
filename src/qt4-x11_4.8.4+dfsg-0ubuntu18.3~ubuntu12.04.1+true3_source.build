@@ -1,0 +1,18 @@
+ dpkg-buildpackage -rfakeroot -d -us -uc -S -nc -sa -v4:4.8.1-0ubuntu4.8
+dpkg-buildpackage: source package qt4-x11
+dpkg-buildpackage: source version 4:4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true3
+dpkg-buildpackage: source changed by Rohan Garg <mpnolan@basenet>
+ dpkg-source --before-build qt4-x11-precise
+dpkg-buildpackage: warning: it is a bad idea to generate a source package without cleaning up first, it might contain undesired files.
+ dpkg-source -b qt4-x11-precise
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building qt4-x11 using existing ./qt4-x11_4.8.4+dfsg.orig.tar.xz
+dpkg-source: info: building qt4-x11 in qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true3.debian.tar.gz
+dpkg-source: info: building qt4-x11 in qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true3.dsc
+ dpkg-genchanges -S -sa -v4:4.8.1-0ubuntu4.8 >../qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true3_source.changes
+parsechangelog/debian: warning: 'since' option specifies non-existing version
+parsechangelog/debian: warning: use newest entry that is earlier than the one specified
+dpkg-genchanges: warning: the current version (4:4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true3) is earlier than the previous one (4:4.8.4+dfsg-0ubuntu18.3)
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build qt4-x11-precise
+dpkg-buildpackage: full upload (original source is included)
