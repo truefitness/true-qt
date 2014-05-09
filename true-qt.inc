@@ -14,7 +14,8 @@ MAINTAINER=mpnolan@truefitness.com
 BUILDDIR=${SRCDIR}/${APPNAME}-${DEBVERSION}
 #DEBDIR := ${APPDIR}/debian
 
-all: shownames unpack build repo
+getsources: get_debian_tgz get_source_package
+all: shownames getsources unpack build repo
 
 shownames:
 	@echo packaging ${APPDIR}
@@ -30,6 +31,15 @@ unpack:
 	@echo dpkg-source ...
 	(cd ${SRCDIR}; dpkg-source -x ${DSCNAME})
 
+get_debian_tgz:
+	@echo "downloading debian.tar.gz..."
+	cd ${SRCDIR}
+	wget http://software.truefitness.com/true-qt/qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4.debian.tar.gz
+
+get_source_package:
+	@echo "downloading orig.tar.gz from server..."
+	cd ${SRCDIR}
+	wget http://software.truefitness.com/true-qt/qt4-x11_4.8.4+dfsg.orig.tar.xz
 
 source:
 	@echo "creating source package..."
