@@ -1,6 +1,5 @@
 #!/usr/bin/make
 
-#VERSION := $(shell git describe --long | sed s/-/./g)
 DEBVERSION := 4.8.4+dfsg
 UBVERSION := 0ubuntu18.3~ubuntu12.04.1
 TRVERSION := +true4
@@ -15,7 +14,7 @@ TARORIGNAME="${APPNAME}_${VERSION}.orig.tar.gz"
 MAINTAINER=mpnolan@truefitness.com
 BUILDDIR=${SRCDIR}/${APPNAME}-${DEBVERSION}
 #DEBDIR := ${APPDIR}/debian
-BUILD_DEPENDS =debhelper , cdbs, quilt, autotools-dev, flex, bison, gstreamer-tools, libasound2-dev, libdbus-glib-1-dev, libglib2.0-dev, libgstreamer0.10-dev, libgstreamer-plugins-base0.10-dev, libnl-3-dev, libsndfile1-dev, libusb-dev, libcap-ng-dev, libudev-dev, libreadline-dev, check , python3-dev 
+BUILD_DEPENDS =debhelper (>= 8.9.9)  dpkg-dev (>= 1.16.1), flex  freetds-dev, libasound2-dev  libaudio-dev, libcups2-dev  libdbus-1-dev, libfreetype6-dev  libgl-dev, libgl1-mesa-dev  libglib2.0-dev, libglu-dev  libglu1-mesa-dev, libgstreamer-plugins-base0.10-dev  libgstreamer0.10-dev, libgtk2.0-dev  libice-dev, libicu-dev  libjpeg-dev, libmng-dev  libmysqlclient-dev, libpam0g-dev  libpng12-dev, libpq-dev  libreadline-dev, libsm-dev  libsqlite3-dev, libssl-dev  libtiff4-dev, libx11-dev  libxcursor-dev, libxext-dev  libxft-dev, libxi-dev (>= 2  libxinerama-dev, libxmu-dev  libxrandr-dev, libxrender-dev  libxslt1-dev, libxt-dev  libxtst-dev, libxv-dev  pkg-kde-tools (>= 0.14.2), rsync  unixodbc-dev, zlib1g-dev
 FW_MIN_VERSION=0.9.91
 
 # Define the Control File
@@ -24,7 +23,7 @@ Source: $(APPNAME)
 Section: unknown
 Priority: extra
 Maintainer: Michael Nolan <mpnolan@truefitness.com>
-Build-Depends:debhelper (>= 8.1.3), cdbs (>= 0.4.97), quilt, autotools-dev, flex, bison, gstreamer-tools, libasound2-dev (>= 1.0.24.1), libdbus-glib-1-dev, libglib2.0-dev (>= 2.28), libgstreamer0.10-dev (>= 0.10.30), libgstreamer-plugins-base0.10-dev (>= 0.10.30), libnl-3-dev, libsndfile1-dev, libusb-dev, libcap-ng-dev, libudev-dev, libreadline-dev, check (>= 0.9.8-1.1), python3-dev
+Build-Depends:debhelper (>= 8.9.9)  dpkg-dev (>= 1.16.1), flex  freetds-dev, libasound2-dev  libaudio-dev, libcups2-dev  libdbus-1-dev, libfreetype6-dev  libgl-dev, libgl1-mesa-dev  libglib2.0-dev, libglu-dev  libglu1-mesa-dev, libgstreamer-plugins-base0.10-dev  libgstreamer0.10-dev, libgtk2.0-dev  libice-dev, libicu-dev  libjpeg-dev, libmng-dev  libmysqlclient-dev, libpam0g-dev  libpng12-dev, libpq-dev  libreadline-dev, libsm-dev  libsqlite3-dev, libssl-dev  libtiff4-dev, libx11-dev  libxcursor-dev, libxext-dev  libxft-dev, libxi-dev (>= 2  libxinerama-dev, libxmu-dev  libxrandr-dev, libxrender-dev  libxslt1-dev, libxt-dev  libxtst-dev, libxv-dev  pkg-kde-tools (>= 0.14.2), rsync  unixodbc-dev, zlib1g-dev
 Standards-Version: 3.9.2
 Homepage: http://www.truefitness.com 
 
@@ -32,7 +31,7 @@ Package: $(APPNAME)
 Architecture: i386
 Depends: $${shlibs:Depends}, $${misc:Depends}
 Recommends:  
-Description: Linux Bluetooth Stack.
+Description: Custom Qt build for True Fitness
 endef
 
 export CONTROLDATA
@@ -50,21 +49,16 @@ shownames:
 	@echo dscname=${DSCNAME}
 	@echo buildir=${BUILDDIR}	
 	
-tars:
-	@echo copying sourcetree
-	cp -a ../touch ${APPDIR}
-	@echo creating tar archive
-	tar czf ${TARNAME} ${APPDIR}
-	@echo creating .orig tar archive copy
-	cp ${TARNAME} ${TARORIGNAME}
+#tars:
+	#@echo copying sourcetree
+	#cp -a ../touch ${APPDIR}
+	#@echo creating tar archive
+	#tar czf ${TARNAME} ${APPDIR}
+	#@echo creating .orig tar archive copy
+	#cp ${TARNAME} ${TARORIGNAME}
 
-	echo extracting tar...
-	tar xzf ${TARNAME}
-
-# Placeholder, copy source to this repos
-#get_source:
-#	wget http://qa-ec2.netpulse.ws:80/pantheon/updates/oem/true/source/bluexxx
-
+	#echo extracting tar...
+	#tar xzf ${TARNAME}
 
 unpack:
 	@echo dpkg-source ...
@@ -73,11 +67,15 @@ unpack:
 
 dhmake:
 	@echo dh_make...
-	(cd ${APPDIR}; dh_make -s -e ${MAINTAINER})
+	(cd ${BUILDDIR}; dh_make -m -e ${MAINTAINER})
 	(cd ${DEBDIR} ; rm *.ex *.EX )
 	cp rules ${DEBDIR}/rules
 	echo "$$CONTROLDATA" > ${DEBDIR}/control
 
+
+source:
+	@echo "creating source package..."
+	debuild --no-lintian -S -uc -us -sd
 
 build:
 	@echo building...

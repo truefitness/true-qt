@@ -22,12 +22,15 @@ quilt refresh
 
 #dpkg-buildpackage -us -uc -j4
 
-# I think this is the sequence to add a patch and rebuild
-# debian/rules clean ???
+# sequence to add a patch and rebuild
+#make unpack
+#cd qt4-x11-4.8.4+dfsg
 #quilt new foo.patch
 #quilt add src/foo.cpp
 #patch -p0 < some.patch
 #quilt refresh
 #dch -v "4:4.8.4+dfsg-0ubuntu18.1~precise1+true3"
-##debuild --no-lintian -S -uc -us -sd
+# edit makefile and bump TRVERSION
+#make source
 #dpkg-buildpackage -us -uc -j4
+
