@@ -52,10 +52,8 @@ build:
 
 repo:
 	@ echo building repository
-	@mkdir -p repo/pool/b 
-	@mkdir -p repo/pool/p
-	cp -a archive/* . 
-	cp ${SRCDIR}/*.deb repo/pool/b
+	@mkdir -p repo/
+	cp ${SRCDIR}/*.deb repo/
 	(cd repo; dpkg-scanpackages . /dev/null | gzip -9c > Packages.gz)
 	
 repo-clean:
