@@ -23,6 +23,7 @@ quilt refresh
 #dpkg-buildpackage -us -uc -j4
 
 # sequence to add a patch and rebuild
+#make getsources
 #make unpack
 #cd qt4-x11-4.8.4+dfsg
 #quilt new foo.patch
