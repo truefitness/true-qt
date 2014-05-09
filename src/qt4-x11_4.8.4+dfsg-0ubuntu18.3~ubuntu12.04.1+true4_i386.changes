@@ -1,0 +1,233 @@
+Format: 1.8
+Date: Thu, 08 May 2014 15:55:59 -0500
+Source: qt4-x11
+Binary: libqtcore4 libqt4-core libqtgui4 libqt4-gui libqt4-network libqt4-opengl libqt4-script libqt4-scripttools libqt4-sql libqt4-sql-mysql libqt4-sql-odbc libqt4-sql-psql libqt4-sql-sqlite libqt4-sql-tds libqt4-svg libqt4-webkit libqt4-xml libqt4-xmlpatterns libqt4-dbus libqt4-qt3support libqt4-designer libqt4-help libqt4-assistant libqt4-test libqt4-declarative libqt4-declarative-folderlistmodel libqt4-declarative-gestures libqt4-declarative-particles libqt4-declarative-shaders libqt4-dev libqt4-dev-bin libqt4-private-dev libqt4-opengl-dev libqt4-dbg libqt4-designer-dbg libqt4-qt3support-dbg libqt4-script-dbg libqt4-webkit-dbg libqt4-xmlpatterns-dbg qt4-bin-dbg qt4-demos-dbg qt4-designer qt4-dev-tools qt4-qmake qt4-qtconfig qt4-demos qt4-qmlviewer qt4-linguist-tools qdbus qt4-doc qt4-doc-html qt4-default
+Architecture: source i386 all
+Version: 4:4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4
+Distribution: precise
+Urgency: low
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Changed-By: Rohan Garg <mpnolan@basenet>
+Description: 
+ libqt4-assistant - transitional package for Qt 4 assistant module
+ libqt4-core - transitional package for Qt 4 core non-GUI runtime libraries
+ libqt4-dbg - Qt 4 library debugging symbols
+ libqt4-dbus - Qt 4 D-Bus module
+ libqt4-declarative - Qt 4 Declarative module
+ libqt4-declarative-folderlistmodel - Qt 4 folderlistmodel QML plugin
+ libqt4-declarative-gestures - Qt 4 gestures QML plugin
+ libqt4-declarative-particles - Qt 4 particles QML plugin
+ libqt4-declarative-shaders - Qt 4 shaders QML plugin
+ libqt4-designer - Qt 4 designer module
+ libqt4-designer-dbg - Qt 4 designer library debugging symbols
+ libqt4-dev - Qt 4 development files
+ libqt4-dev-bin - Qt 4 development programs
+ libqt4-gui - transitional package for Qt 4 GUI runtime libraries
+ libqt4-help - Qt 4 help module
+ libqt4-network - Qt 4 network module
+ libqt4-opengl - Qt 4 OpenGL module
+ libqt4-opengl-dev - Qt 4 OpenGL library development files
+ libqt4-private-dev - Qt 4 private development files
+ libqt4-qt3support - Qt 3 compatibility library for Qt 4
+ libqt4-qt3support-dbg - Qt 3 compatibility library for Qt 4 debugging symbols
+ libqt4-script - Qt 4 script module
+ libqt4-script-dbg - Qt 4 script library debugging symbols
+ libqt4-scripttools - Qt 4 script tools module
+ libqt4-sql - Qt 4 SQL module
+ libqt4-sql-mysql - Qt 4 MySQL database driver
+ libqt4-sql-odbc - Qt 4 ODBC database driver
+ libqt4-sql-psql - Qt 4 PostgreSQL database driver
+ libqt4-sql-sqlite - Qt 4 SQLite 3 database driver
+ libqt4-sql-tds - Qt 4 FreeTDS database driver
+ libqt4-svg - Qt 4 SVG module
+ libqt4-test - Qt 4 test module
+ libqt4-webkit - transitional package for Qt 4 WebKit module
+ libqt4-webkit-dbg - transitional package for Qt 4 WebKit debugging symbols
+ libqt4-xml - Qt 4 XML module
+ libqt4-xmlpatterns - Qt 4 XML patterns module
+ libqt4-xmlpatterns-dbg - Qt 4 XML patterns library debugging symbols
+ libqtcore4 - Qt 4 core module
+ libqtgui4  - Qt 4 GUI module
+ qdbus      - Qt 4 D-Bus tool
+ qt4-bin-dbg - Qt 4 binaries debugging symbols
+ qt4-default - Qt 4 development defaults package
+ qt4-demos  - Qt 4 examples and demos
+ qt4-demos-dbg - Qt 4 examples and demos debugging symbols
+ qt4-designer - graphical designer for Qt 4 applications
+ qt4-dev-tools - Qt 4 development tools
+ qt4-doc    - Qt 4 API documentation
+ qt4-doc-html - Qt 4 API documentation (HTML format)
+ qt4-linguist-tools - Qt 4 Linguist tools
+ qt4-qmake  - Qt 4 qmake Makefile generator tool
+ qt4-qmlviewer - Qt 4 QML viewer
+ qt4-qtconfig - Qt 4 configuration tool
+Changes: 
+ qt4-x11 (4:4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4) precise; urgency=low
+ .
+   * Add patches true-gc-black-screenfix and qtbug-21337
+Checksums-Sha1: 
+ 8f1fabcea384f259ac1adcba5016e56ef9221fa7 4931 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4.dsc
+ 6622bcf814fd14e5837431ffe6099f7c89cae70e 513940 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4.debian.tar.gz
+ c7819f9f17a388a8245817f1292bfb7bdcd7f73c 2166518 libqtcore4_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ e020298ddfdc128572e89090e8560b66bfc583d2 66092 libqt4-core_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 12987515462fa7bdf0ba9567601585ccd2c8c457 4189708 libqtgui4_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ a9cba9bcaab4396a9ce84a20de81b06e9c0bf56d 66078 libqt4-gui_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 575befc881a4b124724bdfe37a1a4ae77dd1b811 621470 libqt4-network_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 8b5b2ec45f77215b298be701ec1cb4609000fcc3 361124 libqt4-opengl_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 976ce1a051dd6986b0928b2aadfbcf8eebd2e90c 859564 libqt4-script_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 008eec1c5526751b790a8bab183c0644b90bed29 288840 libqt4-scripttools_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 5cbac1bce5570672f6405a172a9a868dbf2f4848 160124 libqt4-sql_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 9a614550e623d2e1d3aaecd861e5b7cfb011462d 90254 libqt4-sql-mysql_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ f01af29f44c0dc0f2867ba2603b1b5eecd362193 105120 libqt4-sql-odbc_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ b659114a3a0ae6355a5272c2a459d596f3d0245e 93978 libqt4-sql-psql_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 0b01b28babb5d750064e6306d2ec195787e688e1 83792 libqt4-sql-sqlite_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 20b38fbec8dce55bcc7c7d7b0691b95b19485946 84606 libqt4-sql-tds_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ a97c5c38acfca651de29efb4691fa8b1fb04dbb7 199718 libqt4-svg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 3b8c8b1065967c6dc3cb7525750b024b472e7a6a 66060 libqt4-webkit_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ ef5793f2309afaf41db2a8264b267e34432bc2c4 156200 libqt4-xml_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 596f3ec86277cb632596fc3be02ed0332490dfc9 1117294 libqt4-xmlpatterns_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ e220b3e254c4c3e5ccb7aa5073ad2a7cdee3db61 245582 libqt4-dbus_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ b87f7aef0e98303f455d1dbfbcf5a421b6cc4ac7 1104514 libqt4-qt3support_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ d57ad7f07489be419b80e49c1441884f44fc2e6b 3709346 libqt4-designer_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ d18ddc0b42e943a5a6bd0de7a7e7c5965148baf2 271520 libqt4-help_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 1683a8040d88e52dffc829ce0cde854b4a2a4a4f 66056 libqt4-assistant_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 96c5f4f2926cacd463461c154505e5c678725027 121834 libqt4-test_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 6f644641f0c59c14ac1df48a89050fddc2c47513 1151554 libqt4-declarative_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 8aa1d91792f3d22065f54512a6dda069dc190e88 78586 libqt4-declarative-folderlistmodel_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 46feed1317ef8a74e6ae12ad7c77e46a546c9659 80536 libqt4-declarative-gestures_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 0c7e4918f5faebfe6a8f426c7da49956363adc84 86778 libqt4-declarative-particles_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 4708d26fa325496db179c35e22422c35729e68f3 94138 libqt4-declarative-shaders_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 65d1ab52f02ebbf75f678987e0a48582df18393d 954268 libqt4-dev_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ c7c6c8c20b35f6551334a7f6091ef72ea3524057 1689860 libqt4-dev-bin_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 8b941c993e13f7ce0d0533379f8c564bae7b1895 641846 libqt4-private-dev_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 266b09d2ddf07742e0073fb36858e1c74581b4e2 82668 libqt4-opengl-dev_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ ae5ee839798cc5c0f2d0aecdc0673396fad32274 110892696 libqt4-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ f94b1129c43b94498e196dddf7cdaa64e0d5f13c 39643716 libqt4-designer-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 652fcf80fdc57803f34ce7bc5341b66e9716df8e 13372730 libqt4-qt3support-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 3c02a7227ed5c033ef0069e23e4eeaa55e3dba76 17555756 libqt4-script-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ c91840d87208fa830643d3fd3db8221b1ea0476f 66038 libqt4-webkit-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 1af2e5519b6efefcb2f3882912e6c2fc1e490045 27047662 libqt4-xmlpatterns-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 2bfd9c4e5c1ae28060d2b573a73f753cb3059cd7 44468860 qt4-bin-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ dc38997a7cf2e1b2438bc0bf3bbacfca705109b1 108388832 qt4-demos-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 1bd7b730931bbd874ddec2af27ebadf34f86e2aa 405524 qt4-designer_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 358c15dc1550fff559a7859e32b146769b850aec 3942280 qt4-dev-tools_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 1aa379255c73dd1b720fc8d3d55a29567ac6202f 1307320 qt4-qmake_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 7dea4f1937c9b90ad5e7badacaa14dd2fad8dc43 155620 qt4-qtconfig_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 9aba92ca0243473ecf03748e22daf5762e7a43a4 9847422 qt4-demos_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 7f2dd081315b98f5c33bff80e26ff94fa61dc29e 207306 qt4-qmlviewer_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 3a73895bc480a73dc2f37dfdef1d1ba5369abe1b 908984 qt4-linguist-tools_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ ae69cdcb3504d9779049c5e0b44ecc68148eb61a 88890 qdbus_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ b37a5fb26d69a3023f22337787c13e8021438302 95509530 qt4-doc_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_all.deb
+ 0fd2d919d94643730afd22d9e1fef6c058120814 45737132 qt4-doc-html_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_all.deb
+ 963ca5783489527ebfdd9e50188603d776ee9174 66138 qt4-default_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_all.deb
+Checksums-Sha256: 
+ 92364f679c6eb98228706981ac3d65ba60c822fb353af3da29ce44a3488870f6 4931 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4.dsc
+ fa8551847f32956e6d02349ed4d6f6d45fcd8e42404373b50c7586e256c8fd0b 513940 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4.debian.tar.gz
+ 42ff1cc2defa8dbd94e03b094bcd41ac9a772af18a80c9eea8bcd35b31ed5fb5 2166518 libqtcore4_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 2d5ba9e58b707ba866327fd693ce5ecf4513d7d994216ec78866dd2f0dc7e1d5 66092 libqt4-core_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 8aeac7a9c2e089290881fcb6f3504f498b0bce6c20035e487024b73c301a5fd1 4189708 libqtgui4_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 63ff4c1750505627dfde1d8fafd9c536e28ed498104740077e99c6d9d834f0ee 66078 libqt4-gui_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 9cfb471a443352c23e9da94962bff0b8ed98a9cea7c85220d20627c6cb133a87 621470 libqt4-network_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 4306ed55e2263c16d9a93c17c963f48aff39799ef60c8b9560ddeb4427a73ae5 361124 libqt4-opengl_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 85ab1054c677ec968863f5bc4a019047e9c6f7eda99e9a15ced301537a14be7c 859564 libqt4-script_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ e7704275f44b69cc1ef5d26ad118493b709242c62b67b2e216f56dd5b518605f 288840 libqt4-scripttools_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 413903daa1bce5ef6e0b18d4d978392aed1e90c885253dd075f1caf75bda8c22 160124 libqt4-sql_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 906fce9601f23252de9c513ee7c3141585eafe7a459ffd70a61d5f20ca16dad2 90254 libqt4-sql-mysql_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ cfb7747e16da136fe96bdc5c8d953fabcb06f2cb30c26b7e26afc170735a509d 105120 libqt4-sql-odbc_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 6d3d6d7fd501c4ba169bf7ee55ddb10067b74cca027f822e9c2d67e015cd285f 93978 libqt4-sql-psql_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ c27db4a9c6452134c0ea7847e565a1189ee6d62027e30341de975d8548e118cf 83792 libqt4-sql-sqlite_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 0546bdecdeb6ee69185ad2550f3dd15b2affdc263288f412c8949a60d9f0f941 84606 libqt4-sql-tds_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ fbe37001c5586a7a12752849d851c48e0f7517f98e363d598c5b46af80f5c8b6 199718 libqt4-svg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ d8d7f693e9b94990acd7e4a232bca27d97053273828ab9171f9a4d0c45160a82 66060 libqt4-webkit_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 8adda42ec332110ecff9c8e60464f50c0c16843e7381f072aef34d19b2c18a1c 156200 libqt4-xml_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 0e6953b565d3bdcd5d249b8cc36ecf7d72cadf7b4fea319db0ad4f6cab0316b0 1117294 libqt4-xmlpatterns_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 883e69b8959a471e6c9846e688f3b9d7a1b1e97b726c26feb6b381f40564d492 245582 libqt4-dbus_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ c93f81e508660278e315daad442fa0fa910b95f650d0d321bf92c16389bb0153 1104514 libqt4-qt3support_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ d03755556b99c226bdfacb3f75e629473e394af5fcb7bdeafba1e7875fed93c1 3709346 libqt4-designer_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 27042c9758830a5972f62b7db9b74867ad67fea25c92e536be0e8fa37f44557d 271520 libqt4-help_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 6cf122503f326aaa77c6eeda6994cf0c4b0d8dbd54f7edd8a95c0ed8a6fbdb56 66056 libqt4-assistant_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 9f977459b811b56783188e17dcf6b636ec671cafe56c196b94af4b2ae953aba4 121834 libqt4-test_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 7d1c93f7929a24929e4e61d20c033ce4209045f3ed385eb1370b1b0d9042f27a 1151554 libqt4-declarative_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 6be55d831aba1e77b4a4bd1012230b75d446e5853e9c2aa0010fce3c15a4a04a 78586 libqt4-declarative-folderlistmodel_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 7cf6b3c1baad7a3ba54dce3a5195101e85c89c28138debe491c401fa73eb6a60 80536 libqt4-declarative-gestures_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 9e54d49a800e313a817f05d6a9dae07dff053d45e930beafb8f0d5e3e0aff7da 86778 libqt4-declarative-particles_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 6a0e19d11e88ac7497480446955fb727b21b076bd3d2ea55dd064a859b9145d8 94138 libqt4-declarative-shaders_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ a8aa5de8c61322d1cc08aa2647629a4a5df8e8fb58a0800b20541838f0c44dc1 954268 libqt4-dev_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 9d4a2dceb9913f7e92a57d8f50a3d87f37713bd9ac950846f7098f8d584cb634 1689860 libqt4-dev-bin_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 3a4b2f5d57761ba7381c1d5a0cd6fcbc4ce93234448aeba4ddbb1cbbe7620e42 641846 libqt4-private-dev_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 33788e3e41c17c1312a576a41430e71a631eb51db325016eb1c5d739a6127fcd 82668 libqt4-opengl-dev_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 341e82f726d6e01fea77802735ee8ffe68bd85e5dd853b52c910c7ca12c54d3f 110892696 libqt4-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ fd5aa544c20326b0dbac126a84ecad07586ad85c1afbe9ff570fdb77484f0919 39643716 libqt4-designer-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 04fafc7bb238b2f3724937243a627316ba5a1966e2f1a1a3c2d3a8e4082ee64a 13372730 libqt4-qt3support-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ ad9309c2ce71c73e87fb5af89ff5dc10f57963a222eba0246c914ba8dacd56a0 17555756 libqt4-script-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 43b20b72c8ab3a68a652f3070ad56008b8b9da7fc4985251d421c13b9e48d2cc 66038 libqt4-webkit-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ fb6bb3b80b4a70a81de8498be65f509ace878e16886b823b383e33741c129db4 27047662 libqt4-xmlpatterns-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ a14b75e235e5f61d364a4ce551e3d11c743ef7cc879e806244409f329ec3ab56 44468860 qt4-bin-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ dd042b249b9b99fab99bcfacd177dab4328edb37d7cd08120155ba5bbef105d0 108388832 qt4-demos-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ a200692f1e2f9b06f715c8f9fbbbca8059f617c97c75ae5fff678415005cc7c3 405524 qt4-designer_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ c7116f5394ab55545d0e00c29fff9aa6cd794300ccce04b955ff1d76d6bfa855 3942280 qt4-dev-tools_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ bf90bde5da86fd5d8d9e8d0d32d782dfb5c31f216d7d11191ecc14ef5213b531 1307320 qt4-qmake_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 8232b4641a55eb0078a45bfd17efab4f060510dbd6797c57d5624c571be535a7 155620 qt4-qtconfig_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ c938ab30e6335d53af18912b7f46770de2ad29d7e4f40fc9a028680f0912216b 9847422 qt4-demos_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ feaff69a4b349f4a8de98f534f2a4ef5494e42e6bd427728a95b171e044cf342 207306 qt4-qmlviewer_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ bc183b1a1a79f209fd64a1e72c7591e0f54f3d6371080c289fa7530cce117c3f 908984 qt4-linguist-tools_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ c22f840134dfd96f4e32b82f3571d343663aa20346f0ab32a3327ec8da3e99bc 88890 qdbus_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 1b85fabd62188fa9699553802f13451834081fa307778bceec76bf28898f07a0 95509530 qt4-doc_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_all.deb
+ 9b6ba931f56737cd55265ee24d6fcb8bfe80ad3329174055d707ba80a99dde90 45737132 qt4-doc-html_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_all.deb
+ 0f386eea41f0b89b0907942d6a7a5248955982b9421b271be291891088899a5b 66138 qt4-default_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_all.deb
+Files: 
+ 759c672b81221bc8846ca345df2f2339 4931 libs optional qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4.dsc
+ 45b84938d51f5df75d23e3c1d739460f 513940 libs optional qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4.debian.tar.gz
+ 2d53019e0da80b94bfdc6176fdc884de 2166518 libs optional libqtcore4_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 30b7e32a75ac0687e621d25e2fa298e6 66092 oldlibs extra libqt4-core_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ aa749abed7c8300198fc03ee35343d42 4189708 libs optional libqtgui4_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ e9d4084c3cca19fc871f903b504bee80 66078 oldlibs extra libqt4-gui_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 941943750b068fe122e9d50145a21fe2 621470 libs optional libqt4-network_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 14562056946e0825f1bf60e56e8ec85f 361124 libs optional libqt4-opengl_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ a7eaeeca95205e162e0f29a805eb404b 859564 libs optional libqt4-script_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ e0ef8dd8e32de0d81290ed1ed860f274 288840 libs optional libqt4-scripttools_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ f7895b0054c0f099631b5dd8d9c922b7 160124 libs optional libqt4-sql_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 4844b8c1c2036cae626680e74977d926 90254 libs optional libqt4-sql-mysql_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ d15c21898bb4659df295fdef3c9c1777 105120 libs optional libqt4-sql-odbc_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ c26a8758b95ca4f9fbaef77a832e529e 93978 libs optional libqt4-sql-psql_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ c6a82fd329f3f72f6a31a1ccf9e7e435 83792 libs optional libqt4-sql-sqlite_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ f73553283dc22d4c740cdd84e5f529d2 84606 libs optional libqt4-sql-tds_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ e32006cc9967beb0b38174b6a9a087f7 199718 libs optional libqt4-svg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ b472d0e69037f7219af9f36958d86b0a 66060 oldlibs extra libqt4-webkit_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ d12c068c57b6c73ca9a6c5978a2135d9 156200 libs optional libqt4-xml_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 9e22860d85e7f67706bf52bead631292 1117294 libs optional libqt4-xmlpatterns_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ cda758574f0cc388adc5380c5139db75 245582 libs optional libqt4-dbus_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ e33fa47c28151e54f3e88ac54ca27bc9 1104514 libs optional libqt4-qt3support_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 7f79c6065ac86d3321905287b1e350c1 3709346 libs optional libqt4-designer_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 1559940f9680db2a6ab3bbdc9b039d30 271520 libs optional libqt4-help_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 2797cb62b1b4052912078cd7b061310a 66056 oldlibs extra libqt4-assistant_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ d90e51afde799f9257d2b8966d0fa3b8 121834 libs optional libqt4-test_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ e365ac4f614a225fc45400352cc2907b 1151554 libs optional libqt4-declarative_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ aa8006ce5aec0ea1a8a8b3bb1654d471 78586 libs optional libqt4-declarative-folderlistmodel_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ f5842d78b21d19d21e59998acb54f35d 80536 libs optional libqt4-declarative-gestures_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 6dcdd8c0e1096d6be41c60c22d199f9e 86778 libs optional libqt4-declarative-particles_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ cbb6cbde5bbaa15a7ab25e43309c2bf9 94138 libs optional libqt4-declarative-shaders_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 27548d1540f2946744c145792de37a4e 954268 libdevel optional libqt4-dev_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 4f5382aa9d2ca60dc002322ef03b18d6 1689860 devel optional libqt4-dev-bin_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 8706c1fe099cee8377fb76a95310a989 641846 libdevel optional libqt4-private-dev_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 25c00c5e5e112e116c446e0069fc3fc6 82668 libdevel optional libqt4-opengl-dev_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 7f147dfae7e74eac7898d77663a6c0e8 110892696 debug extra libqt4-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 6537d09f5a9008fc343e1bb5a0ce4093 39643716 debug extra libqt4-designer-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 9ecb4a7b0d97fa383216eee6f5d382fe 13372730 debug extra libqt4-qt3support-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 26082e7048485ba1c8b2d4aa3081f93e 17555756 debug extra libqt4-script-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ c521fe9cd7332a7e4bcdbf80d463112e 66038 oldlibs extra libqt4-webkit-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ ada7bd731f6d6fbaa85bec1fa747b13a 27047662 debug extra libqt4-xmlpatterns-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ c150f87eee7749618f5223a91214474c 44468860 debug extra qt4-bin-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ a74ef30b5e19f9de414b149e0ee40069 108388832 debug extra qt4-demos-dbg_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 2b99859beb464e6f383bb304171a44db 405524 devel optional qt4-designer_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 04ff96fd9fba8d625dfb0e589f968ac5 3942280 devel optional qt4-dev-tools_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 973bf0fe47a210a8adeeb84bab2cc76a 1307320 devel optional qt4-qmake_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 0e39cbcce2703550988a49abcd735b05 155620 x11 optional qt4-qtconfig_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 033d144984f573dd2fd80bc6f5547cdf 9847422 x11 optional qt4-demos_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 6525a6cac62b9255d845032892e2be85 207306 devel optional qt4-qmlviewer_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ acc213b877375dfc50f45c492d33a1c1 908984 devel optional qt4-linguist-tools_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ 01ce4caf064340ad82fbca714e8ceaad 88890 utils optional qdbus_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_i386.deb
+ aa64f6aef5eba7a3f287d6e329320f1a 95509530 doc optional qt4-doc_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_all.deb
+ 770f8334d7577c6d0eb0e05719d84163 45737132 doc optional qt4-doc-html_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_all.deb
+ ae4e359a0355f7838a4d5ebaabcca380 66138 libs optional qt4-default_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4_all.deb
+Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>

@@ -65,11 +65,11 @@ Package-List:
  qt4-qtconfig deb x11 optional
 Checksums-Sha1: 
  58e8f285501cb84ed33e512573a99357b889fbda 199762900 qt4-x11_4.8.4+dfsg.orig.tar.xz
- 57939d1c0674792f53ab09f365b69790ae200a89 513941 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4.debian.tar.gz
+ 6622bcf814fd14e5837431ffe6099f7c89cae70e 513940 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4.debian.tar.gz
 Checksums-Sha256: 
  47a735635c11205911501a7436e6140235911012282a16b738b3cc1442e1b4f6 199762900 qt4-x11_4.8.4+dfsg.orig.tar.xz
- 73fc6dde77fb48b069ab4039edba69470878c4b17c9a7d0f662fed3ab83c0eeb 513941 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4.debian.tar.gz
+ fa8551847f32956e6d02349ed4d6f6d45fcd8e42404373b50c7586e256c8fd0b 513940 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4.debian.tar.gz
 Files: 
  d74665f5ae3e0b9e4cc407375f872008 199762900 qt4-x11_4.8.4+dfsg.orig.tar.xz
- ac8a89aa5762ef533c7088f8a2cd4343 513941 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4.debian.tar.gz
+ 45b84938d51f5df75d23e3c1d739460f 513940 qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4.debian.tar.gz
 Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
