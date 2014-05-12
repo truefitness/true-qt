@@ -16,8 +16,8 @@ BUILDDIR=${SRCDIR}/${APPNAME}-${DEBVERSION}
 DEBIAN_TGZ := http://software.truefitness.com/true-qt/qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1${TRVERSION}.debian.tar.gz
 
 
-getsources: get_debian_tgz get_source_package
 all: shownames getsources unpack build repo
+getsources: get_debian_tgz get_source_package
 
 shownames:
 	@echo packaging ${APPDIR}
