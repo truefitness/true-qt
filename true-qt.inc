@@ -36,11 +36,11 @@ unpack:
 
 get_debian_tgz:
 	@echo "downloading debian.tar.gz..."
-	(cd ${SRCDIR}; wget ${DEBIAN_TGZ})
+	(cd ${SRCDIR}; wget -N ${DEBIAN_TGZ})
 
 get_source_package:
 	@echo "downloading orig.tar.gz from server..."
-	(cd ${SRCDIR}; wget http://software.truefitness.com/true-qt/qt4-x11_4.8.4+dfsg.orig.tar.xz)
+	(cd ${SRCDIR}; wget -N http://software.truefitness.com/true-qt/qt4-x11_4.8.4+dfsg.orig.tar.xz)
 
 source:
 	@echo "creating source package..."
