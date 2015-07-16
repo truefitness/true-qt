@@ -1,0 +1,14 @@
+ new debian package, version 2.0.
+ size 2574 bytes: control archive=777 bytes.
+    1018 bytes,    10 lines      control              
+     245 bytes,     3 lines      md5sums              
+ Package: qt4-x11-build-deps
+ Version: 4:4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1+true4
+ Architecture: i386
+ Maintainer: Robert Hedges <rhedges@truefitness.com>
+ Installed-Size: 27
+ Depends: build-essential, debhelper (>= 9), dpkg-dev (>= 1.16.1), flex, freetds-dev, libasound2-dev, libaudio-dev, libcups2-dev, libdbus-1-dev, libfreetype6-dev, libgl1-mesa-dev | libgl-dev, libglib2.0-dev, libglu1-mesa-dev | libglu-dev, libgstreamer-plugins-base0.10-dev, libgstreamer0.10-dev, libgtk2.0-dev, libice-dev, libicu-dev, libjpeg-dev, libmng-dev, libmysqlclient-dev, libpam0g-dev, libpng-dev, libpq-dev, libreadline-dev, libsm-dev, libsqlite3-dev, libssl-dev, libtiff-dev, libx11-dev, libxcursor-dev, libxext-dev, libxft-dev, libxi-dev, libxinerama-dev, libxmu-dev, libxrandr-dev, libxrender-dev, libxslt1-dev, libxt-dev, libxtst-dev, libxv-dev, pkg-kde-tools (>= 0.14.2), rsync, unixodbc-dev, zlib1g-dev
+ Section: devel
+ Priority: optional
+ Description: build-dependencies for qt4-x11
+  Depencency package to build the 'qt4-x11' package

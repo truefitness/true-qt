@@ -14,9 +14,9 @@ MAINTAINER=mpnolan@truefitness.com
 BUILDDIR=${SRCDIR}/${APPNAME}-${DEBVERSION}
 #DEBDIR := ${APPDIR}/debian
 DEBIAN_TGZ := http://software.truefitness.com/true-qt/qt4-x11_4.8.4+dfsg-0ubuntu18.3~ubuntu12.04.1${TRVERSION}.debian.tar.gz
+DSC_FILE="${APPNAME}_${VERSION}.dsc"
 
-
-all: shownames getsources unpack build repo
+all: shownames getsources unpack build build_deps repo
 getsources: get_debian_tgz get_source_package
 
 shownames:
@@ -27,9 +27,9 @@ shownames:
 	@echo debdir=${DEBDIR}
 	@echo srcdir=${SRCDIR}
 	@echo dscname=${DSCNAME}
-	@echo buildir=${BUILDDIR}	
-	@echo debian_tgz=${DEBIAN_TGZ}	
-	
+	@echo buildir=${BUILDDIR}
+	@echo debian_tgz=${DEBIAN_TGZ}
+
 unpack:
 	@echo dpkg-source ...
 	(cd ${SRCDIR}; dpkg-source -x ${DSCNAME})
@@ -50,19 +50,21 @@ build:
 	@echo building...
 	( cd ${BUILDDIR}; dpkg-buildpackage -rfakeroot -b -us -uc -j4)
 
+build_deps:
+	@echo creating build deps package
+	( cd ${SRCDIR}; mk-build-deps ${DSC_FILE})
+
 repo:
 	@ echo building repository
 	@mkdir -p repo/
 	cp ${SRCDIR}/*.deb repo/
 	(cd repo; dpkg-scanpackages . /dev/null | gzip -9c > Packages.gz)
-	
-repo-clean:
-	rm -rf ${BUILDDIR}
-	rm -rf repo 
 
-clean:
-	rm -rf ${SRCDIR}/*.deb 
+repo-clean:
 	rm -rf ${BUILDDIR}
 	rm -rf repo
 
-		
+clean:
+	rm -rf ${SRCDIR}/*.deb
+	rm -rf ${BUILDDIR}
+	rm -rf repo
